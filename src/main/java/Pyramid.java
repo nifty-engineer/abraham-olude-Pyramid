@@ -28,6 +28,20 @@ public class Pyramid {
      * @return a string representation of the pyramid.
      */
     public String returnPyramid(int n){
-        return "";
+        
+        String pyramid = "";
+	
+        for (int row = 0; row < n; row++) {
+            for (int col = 0; col <= row; col++) {
+                if (col == row) {
+                    pyramid += "*\n";
+                }
+                else {
+                    pyramid += "*";
+                }			
+            }
+        }	
+        
+        return pyramid;
     }
 }
